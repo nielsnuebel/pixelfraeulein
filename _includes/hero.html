@@ -1,0 +1,76 @@
+<section class="hero" id="wer">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-xl-1 hidden-lg-down pixels">
+        <img src="{{ site.baseurl }}/assets/images/ui/pixels-1.svg" alt="Pixel">
+      </div>
+
+      <div class="col-md-5 col-xl-3 hidden-sm-down team">
+        <div class="herobox">
+          <h2>Da sind sie, die Fräuleins</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-5 col-xl-3 hidden-sm-down team">
+        <div class="herobox">
+          {% assign members = site.personnel | where: "name", "Pamela Tinnemeyer" %}
+          {% for member in members %}
+          <h3>{{ member.name }}</h3>
+          <p>{{ member.role }}</p>
+          <p>{{ member.description }}</p>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="col-xl-1 hidden-lg-down pixels">
+        <img src="{{ site.baseurl }}/assets/images/ui/pixels-1.svg" alt="Pixel">
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-xl-1 hidden-lg-down pixels">
+        <img src="{{ site.baseurl }}/assets/images/ui/pixels-1.svg" alt="Pixel">
+      </div>
+
+      <div class="col-md-5 col-xl-3 hidden-sm-down team">
+        <div class="herobox">
+          {% assign members = site.personnel | where: "name", "Tjorven Guderian" %}
+          {% for member in members %}
+          <h3>{{ member.name }}</h3>
+          <p>{{ member.role }}</p>
+          <p>{{ member.description }}</p>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="col-xl-1 hidden-lg-down pixels">
+        <img src="{{ site.baseurl }}/assets/images/ui/pixels-2.svg" alt="Pixel">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="hidden-md-up mobiletext">
+  <div class="container">
+
+    <h2>Da sind sie, die Fräuleins</h2>
+
+    {% for member in site.personnel %}
+    <hr>
+    <h3>{{ member.name }}</h3>
+    <p>{{ member.role }}</p>
+    <p>{{ member.description }}</p>
+    {% endfor %}
+
+  </div>
+</section>

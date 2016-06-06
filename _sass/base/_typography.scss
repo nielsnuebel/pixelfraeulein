@@ -1,0 +1,78 @@
+body {
+  color: $secondary;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  padding-bottom: 3rem;
+
+  @media (min-width: 992px) {
+    font-size: 20px;
+  }
+}
+
+a {
+  color: $primary;
+  font-weight: $medium;
+  text-decoration: none;
+
+  &:focus {
+    color: darken($secondary, 10%);
+    outline: none;
+  }
+
+  &:hover {
+    color: darken($primary, 10%);
+    text-decoration: none;
+  }
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: $light;
+}
+
+em {
+  color: $primary;
+}
+
+h1 {
+  @include vertical-padding(1.5rem);
+  font-size: 2em;
+  font-weight: $light;
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  color: $secondary;
+  font-weight: $medium;
+}
+
+h2 {
+  @include vertical-padding(1.5rem);
+  font-size: 1.5rem;
+}
+
+hr {
+  border-top: $border;
+}
+
+p {
+  @include vertical-padding(0.75rem);
+  line-height: 1.5;
+}
+
+ul {
+  @include vertical-padding(0.75rem);
+  line-height: 1.5;
+}
+
+.page-text {
+  @include vertical-margin(1.5rem);
+  @include vertical-padding(1.5rem);
+  overflow: hidden;
+  text-align: left;
+
+  & h3 {
+    margin-top: 1rem;
+  }
+}

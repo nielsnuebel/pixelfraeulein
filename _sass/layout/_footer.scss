@@ -1,0 +1,43 @@
+.site-footer {
+  @include vertical-padding(1.5rem);
+  font-weight: $medium;
+
+  & hgroup {
+    margin-bottom: 1.5rem;
+
+    & h1 {
+      @include vertical-padding(0);
+      font-size: 1.5rem;
+    }
+
+    & h2 {
+      @include vertical-padding(0);
+      font-size: 1.25rem;
+    }
+  }
+
+  & p, & ul {
+    @include vertical-padding(0.25rem);
+  }
+
+  & ul li {
+    @media (min-width: 32em) {
+      display: inline-block;
+
+      &+li:before {
+        color: $primary;
+        content: "\25A0";
+        font-size: 0.5em;
+        padding-right: 5px;
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+
+  & .smallprint {
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}

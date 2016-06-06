@@ -1,0 +1,10 @@
+.map {
+
+  & iframe {
+    @include vertical-margin(1.5rem);
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+}

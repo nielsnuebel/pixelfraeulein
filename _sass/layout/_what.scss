@@ -1,0 +1,14 @@
+.what {
+  @include background-img("/assets/images/background-geometric.jpg");
+  @include vertical-margin(1.5rem);
+  @include vertical-padding(1.5rem);
+  font-size: 1.25rem;
+
+  & .panel {
+    @include shadow();
+    @include vertical-margin(1.5rem);
+    background-color: $white;
+    border-radius: 15px;
+    padding: 1.5rem;
+  }
+}

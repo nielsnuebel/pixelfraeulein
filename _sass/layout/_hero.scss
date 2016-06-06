@@ -1,0 +1,122 @@
+.hero {
+  @include vertical-padding(1.5rem);
+  @include background-img("/assets/images/hero-image.jpg");
+  min-height: 300px;
+
+  @media (min-width: 544px) {
+    min-height: 400px;
+  }
+
+  @media (min-width: 768px) {
+    @include vertical-margin(1.5rem);
+    min-height: 500px;
+  }
+
+  @media (min-width: 992px) {
+    min-height: 600px;
+  }
+
+  @media (min-width: 1600px) {
+    min-height: 1000px;
+  }
+
+  @media (min-width: 2000px) {
+    min-height: 1200px;
+  }
+
+  & h2, & h3 {
+    color: $white;
+    line-height: 1.0;
+  }
+
+  & h2 {
+    font-size: 1.5rem;
+
+    @media (min-width: 1200px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  & h3 {
+    @include vertical-padding(0.5rem);
+    font-size: 1.5rem;
+
+    @media (min-width: 1200px) {
+      font-size: 2.0rem;
+    }
+  }
+
+  & .herobox {
+    background-color: $primary;
+    border-radius: 15px;
+    color: $white;
+    font-weight: $medium;
+    padding: 0.5rem;
+
+    @media (min-width: 1200px) {
+      display: table-cell;
+      min-height: 240px;
+      padding: 1rem 0.75rem;
+      vertical-align: middle;
+    }
+  }
+
+  & p {
+    @include vertical-padding(0.25rem);
+    line-height: 1.25;
+
+    @media (min-width: 1200px) {
+      @include vertical-padding(0.5rem);
+    }
+  }
+
+  & .pixels img {
+    @include vertical-padding(0.75rem);
+  }
+
+  & .team {
+    @include vertical-margin(0.75rem);
+
+    @media (min-width: 1200px) {
+      display: table;
+      min-height: 240px;
+    }
+  }
+}
+
+.mobiletext {
+  @include vertical-margin(1.5rem);
+  @include vertical-padding(1.5rem);
+  background-color: $primary;
+  color: $white;
+  font-weight: $medium;
+  margin-top: 0;
+
+  & h2, & h3 {
+    color: $white;
+    line-height: 1.0;
+  }
+
+  & h2 {
+    font-size: 1.75rem;
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+  }
+
+  & h4 {
+    @include vertical-padding(0.5rem);
+    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+
+  & hr {
+    border-top: 2px solid $white;
+  }
+
+  & p {
+    @include vertical-padding(0.25rem);
+  }
+}

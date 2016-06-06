@@ -1,0 +1,39 @@
+.work {
+  @include background-img("/assets/images/background-portfolio.jpg");
+  @include vertical-margin(1.5rem);
+  @include vertical-padding(1.5rem);
+  background-size: 200%;
+  text-align: left;
+
+  @media (min-width: 544px) {
+    background-position: center center;
+    background-size: cover;
+    min-height: 400px;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 600px;
+  }
+
+  & a {
+    background-color: $primary;
+    border: 2px solid $white;
+    border-radius: 4px;
+    color: $white;
+    display: inline-block;
+    font-weight: $medium;
+    padding: 7.5px 15px;
+
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  & h1 {
+    text-align: left;
+  }
+}

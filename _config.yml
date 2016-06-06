@@ -1,0 +1,94 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Pixelfräulein
+email: info@pixelfräulein.de
+description: > # Die besten Freundinnen guter Werbung. Wir setzen auf die werbliche Intuition. Mit Herz und Verstand.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+# Site nav
+nav:
+
+- name: Home 
+  link: "/"
+
+- name: Wer sind wir
+  link: "#wer"
+
+- name: Was machen wir
+  link: "#was"
+
+- name: So arbeiten wir
+  link: "#so"
+
+- name: Portfolio
+  link: "#portfolio"
+
+- name: Kontakt
+  link: "#kontakt"
+
+# Social links
+social:
+
+- name: Facebook
+  icon: "&#xf09a;"
+  link: https://www.facebook.com/
+
+- name: Xing
+  icon: "&#xf168;"
+  link: https://www.xing.com/de
+
+- name: Email
+  icon: "&#xf0e0;"
+  link: mailto:info@pixelfraeulein.de
+
+# This info appears in two places to deal with the crazy hero image layout
+personnel:
+  - name:         Pamela Tinnemeyer
+    role:         Design
+    description:  "innovativ, humorvoll, ideenreich, digital, konzeptionell"
+
+  - name:         Tjorven Guderian
+    role:         Projektmanagement
+    description:  "sympathisch, klug, flexibel, schlagfertig, vorausschauend"
+
+# Making the most of Liquid's neat list formatting
+services:
+  - type: Grafikdesign
+    service:
+      - Geschäftsausstattung
+      - Broschüren
+      - Corporate Identity
+      - Flyer
+      - Brandguide
+      - Anzeigen
+      - Fensterbeschriftung
+
+  - type: Webdesign
+    service:
+      - Website
+      - Microsite
+      - Landingpage
+      - Banner
+      - Shopsysteme
+      - Apps
+      - Email Marketing
+
+  - type: Social Media
+    service:
+      - "Facebook:"
+      - Community Management
+      - Apps
+      - Flyer
+      - Kampagnen
+      - Postings
+      - "&nbsp;"

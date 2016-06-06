@@ -1,0 +1,28 @@
+<section id="was">
+
+  <div class="container">
+    <h1><em>Das</em> machen die Fräuleins</h1>
+  </div>
+
+  <div class="what">
+    <div class="container">
+
+      {% for item in site.services %}
+      <div class="col-lg-4 service">
+        <div class="panel">
+          <h2>{{ item.type }}</h2>
+          <hr>
+          <ul>
+          {% for item in item.service %}
+            <li>{{ item }}</li>
+          {% endfor %}
+          </ul>
+          <hr>
+        </div>
+      </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+
+</section>

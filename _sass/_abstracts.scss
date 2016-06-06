@@ -1,0 +1,33 @@
+$primary: #B5D2B4;
+$secondary: #6D6F71;
+$paper-alt: #F5F5F5;
+$white: #fff;
+
+$light: 300;
+$medium: 500;
+
+$border: 2px solid $primary;
+
+@mixin vertical-margin($margin) {
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+@mixin vertical-padding($padding) {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+@mixin background-img($url) {
+  background-color: $paper-alt;
+  background-image: url($url);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin shadow() {
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(109,111,113,0.5);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(109,111,113,0.5);
+  box-shadow: 0px 5px 10px 0px rgba(109,111,113,0.5);
+}
