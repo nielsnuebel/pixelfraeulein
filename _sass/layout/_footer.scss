@@ -2,6 +2,10 @@
   @include vertical-padding(1.5rem);
   font-weight: $medium;
 
+  a:focus {
+    color: $primary;
+  }
+
   & hgroup {
     margin-bottom: 1.5rem;
 
@@ -20,8 +24,24 @@
     @include vertical-padding(0.25rem);
   }
 
+  & .top {
+    float: right;
+    font-size: 1rem;
+    position: relative;
+    top: -1.5rem;
+
+    &:before {
+      content: "\f10e";
+      font-family: "ionicons";
+      margin-right: 7.5px;
+    }
+
+    @media (min-width: 768px) {
+    }
+  }
+
   & ul li {
-    @media (min-width: 32em) {
+    @media (min-width: 768px) {
       display: inline-block;
 
       &+li:before {

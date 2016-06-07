@@ -41,7 +41,7 @@ social:
 
 - name: Facebook
   icon: "&#xf09a;"
-  link: https://www.facebook.com/
+  link: https://www.facebook.com/pixelfraeulein
 
 - name: Xing
   icon: "&#xf168;"
@@ -85,10 +85,10 @@ services:
 
   - type: Social Media
     service:
-      - "Facebook:"
+      - Facebook
       - Community Management
       - Apps
-      - Flyer
       - Kampagnen
       - Postings
+      - "&nbsp;"
       - "&nbsp;"
