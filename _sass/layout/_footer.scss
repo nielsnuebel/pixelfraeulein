@@ -31,10 +31,10 @@
     top: -1.5rem;
 
     & img {
-      max-height: 12px;
-    }
-
-    @media (min-width: 768px) {
+      margin-right: 5px;
+      max-height: 7px;
+      position: relative;
+      top: -1px;
     }
   }
 
