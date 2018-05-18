@@ -10,7 +10,7 @@ Guderian-Tinnemeyer GbR
 Lindenpassage 13  
 21244 Buchholz in der Nordheide
 
-Telefon: 04181/1376837  
+Telefon: 04181 / 1376837  
 E-Mail: [info@pixelfraeulein.de](info@pixelfraeulein.de)
 
 ## Vertreten durch:
